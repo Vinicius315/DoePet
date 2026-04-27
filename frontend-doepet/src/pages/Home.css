@@ -1,0 +1,63 @@
+.home-container {
+  padding: 40px 10%;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.stats-panel {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.stats-card {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  border-bottom: 6px solid #f27121; /* Laranja DoePet */
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.stats-card .number {
+  font-size: 4.5rem;
+  font-weight: 800;
+  color: #2c3e50;
+  margin: 10px 0;
+}
+
+.ongs-section h2 {
+  color: #2c3e50;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.ongs-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.ong-item {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: transform 0.2s;
+  border: 1px solid #eee;
+}
+
+.ong-item:hover {
+  transform: translateY(-5px);
+  border-color: #f27121;
+}
+
+.ong-item .icon { font-size: 1.5rem; }
+.ong-item .info { display: flex; flex-direction: column; }
+.ong-item strong { color: #34495e; font-size: 1.1rem; }
+.ong-item small { color: #7f8c8d; font-size: 0.85rem; }

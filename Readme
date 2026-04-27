@@ -1,0 +1,57 @@
+🐾 DoePet - Conectando Doações a ONGs de Animais
+O DoePet é uma plataforma Full Stack desenvolvida para intermediar a arrecadação de alimentos, medicamentos e materiais de limpeza para ONGs de proteção animal. O projeto oferece um mapa interativo para localização de pontos de ajuda e um painel administrativo para que as ONGs gerenciem suas necessidades em tempo real.
+
+💡 Ideia Inicial
+A ideia surgiu da necessidade de centralizar as demandas de abrigos de animais, permitindo que doadores saibam exatamente o que falta em cada instituição (ex: 10kg de ração, 5 frascos de soro). O sistema utiliza geolocalização para facilitar a logística de entrega e um painel de controle para evitar desperdícios ou excessos de um único tipo de material.
+
+🛠️ Tecnologias Utilizadas
+Front-end
+React.js (Vite): Biblioteca principal para a interface.
+
+React Router: Gerenciamento de rotas (Home, Login, Painel).
+
+Axios: Consumo da API assíncrona.
+
+CSS3: Estilização personalizada e responsiva.
+
+React-Leaflet: Integração com mapas interativos.
+
+Back-end
+Node.js & Express: Ambiente de execução e framework para o servidor.
+
+SQLite: Banco de dados relacional para persistência de dados.
+
+JWT (JSON Web Token): Autenticação segura das ONGs.
+
+Bcrypt.js: Criptografia de senhas para segurança dos dados.
+
+CORS: Liberação de acesso para o ambiente de desenvolvimento.
+
+🚀 Como Executar o Projeto
+Pré-requisitos
+Node.js instalado.
+
+Gerenciador de pacotes (NPM).
+
+Instalação
+Clone o repositório.
+
+No diretório /backend, execute npm install e npm run dev.
+
+No diretório /frontend, execute npm install e npm run dev.
+
+🧪 Credenciais para Testes (Acesso ONG)
+Para testar as funcionalidades administrativas (CRUD de materiais, edição de estoque e visualização de mensagens), utilize a conta de demonstração abaixo:
+
+📧 E-mail: amigosdosanimais@email.com
+
+🔑 Senha: 123456
+
+📋 Funcionalidades Atuais (CRUD)
+Create: Cadastro de novas ONGs e adição de novos itens de necessidade.
+
+Read: Listagem geral na Home e área restrita de mensagens recebidas.
+
+Update: Alteração de quantidades de materiais (Comida, Limpeza, Medicamentos).
+
+Delete: Exclusão de itens obsoletos ou encerramento de perfis de ONGs.

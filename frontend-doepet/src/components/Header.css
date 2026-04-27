@@ -1,0 +1,96 @@
+/* Container Principal */
+.header-container {
+  background-color: #ffffff;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Sombra suave para profundidade */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+/* Conteúdo Centralizado */
+.header-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Área da Logo */
+.logo-link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.paw-icon {
+  font-size: 1.8rem;
+}
+
+.logo-text {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #2c3e50;
+  letter-spacing: -1px;
+}
+
+/* Menu de Navegação */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #5d6d7e;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* Linha decorativa no hover */
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #f27121; /* Laranja DoePet */
+  transition: width 0.3s;
+}
+
+.nav-link:hover {
+  color: #f27121;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Botão de Login */
+.btn-login {
+  background-color: #f27121;
+  color: #ffffff !important;
+  padding: 10px 25px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: transform 0.2s, background-color 0.3s;
+  box-shadow: 0 4px 10px rgba(242, 113, 33, 0.3);
+}
+
+.btn-login:hover {
+  background-color: #e65c00;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(242, 113, 33, 0.4);
+}

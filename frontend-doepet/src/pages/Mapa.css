@@ -1,0 +1,64 @@
+.mapa-container {
+  padding: 40px 5%;
+  background-color: #f0f2f5;
+  min-height: 100vh;
+}
+
+.mapa-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.mapa-header h1 {
+  color: #2c3e50;
+  font-size: 2rem;
+}
+
+.mapa-layout {
+  display: flex;
+  gap: 20px;
+  background: white;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  height: 500px; /* Altura fixa para o dashboard do mapa */
+}
+
+/* Lista lateral de ONGs */
+.locais-lista {
+  width: 300px;
+  overflow-y: auto;
+  border-right: 1px solid #eee;
+  padding-right: 10px;
+}
+
+.local-item {
+  padding: 15px;
+  border-bottom: 1px solid #f9f9f9;
+  cursor: pointer;
+  transition: background 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.local-item:hover {
+  background-color: #fff3e0;
+}
+
+.local-item strong {
+  color: #f27121;
+  margin-bottom: 5px;
+}
+
+.local-item span {
+  font-size: 0.8rem;
+  color: #7f8c8d;
+}
+
+/* Container do Iframe (Google Maps) */
+.mapa-box {
+  flex: 1;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #e5e3df;
+}
